@@ -1,0 +1,20 @@
+node_modules
+dist
+.netlify
+.DS_Store
+*.local
+
+# Capacitor
+mobile/www
+mobile/android/app/build
+mobile/android/.gradle
+mobile/android/build
+mobile/android/local.properties
+mobile/android/keystore.properties
+mobile/*.keystore
+mobile/.jdk
+
+# IDE
+.idea
+.vscode
+*.swp

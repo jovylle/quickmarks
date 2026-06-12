@@ -1,0 +1,17 @@
+{
+  "name": "Quickmarks",
+  "short_name": "Quickmarks",
+  "description": "Import Chrome or Edge bookmarks and open them in your default browser.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#1a1f2e",
+  "theme_color": "#1a1f2e",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "android": {
+    "icon": {
+      "sources": ["../public/icon.svg"]
+    },
+    "splash": {
+      "sources": ["../public/icon.svg"],
+      "backgroundColor": "#0f1419"
+    }
+  }
+}

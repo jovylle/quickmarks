@@ -1,0 +1,39 @@
+{
+  "name": "quickmarks",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Import Chrome/Edge bookmarks, open in default browser — quickmarks.uft1.com",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "tsx --test src/lib/parseBookmarks.test.ts",
+    "build:mobile": "npm run build && rm -rf mobile/www && cp -r dist mobile/www && npm run sync --prefix mobile",
+    "mobile:sync": "npm run sync --prefix mobile",
+    "mobile:open": "npm run open:android --prefix mobile",
+    "mobile:run": "npm run run:android --prefix mobile",
+    "mobile:release": "bash mobile/scripts/play-release.sh"
+  },
+  "dependencies": {
+    "@capacitor/app": "^7.0.1",
+    "@capacitor/browser": "^7.0.5",
+    "@capacitor/core": "^7.2.0",
+    "@capacitor/preferences": "^7.0.1",
+    "@capawesome/capacitor-file-picker": "^7.2.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.17.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^28.0.3",
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "jsdom": "^29.1.1",
+    "tsx": "^4.20.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  }
+}
